@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu contentId="main-content" menuId="main-menu">
+    <!-- Menu content goes here -->
+    
+      <ion-header>
+        <ion-toolbar class="color-toolbar">
+          <ion-title>Menu</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content>
+        <ion-list lines="none" class="menu-list">
+          <ion-menu-toggle auto-hide="false">
+            <a routerLink="/animal-info" class="menu-item">
+              <ion-label>Booking</ion-label>
+            </a>
+          </ion-menu-toggle>
+          <!-- Add more menu items as needed -->
+        </ion-list>
+      </ion-content>
+    
+  </ion-menu>
+
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>
