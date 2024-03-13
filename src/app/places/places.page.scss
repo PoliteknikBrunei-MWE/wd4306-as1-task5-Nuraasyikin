@@ -1,0 +1,38 @@
+.color-toolbar {
+    --background: #FFFF00; /* Change this to your preferred color */
+  }
+
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    //height: 100vh;
+  }
+  
+  .custom-button {
+    color: #000000;
+    --background: #FFD700;
+    border-color: #fdff93;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 0px;
+    margin: 10px 0;
+    width: 70%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .custom-button:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  
+
+  
+  
+  
+  
+  
+  
