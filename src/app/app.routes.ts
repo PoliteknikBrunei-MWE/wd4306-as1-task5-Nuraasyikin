@@ -54,7 +54,7 @@ export const routes: Routes = [
     loadComponent: () => import('./tabs/tabs.page').then((m) => m.TabsPage),
   },
   {
-    path: 'place-detail',
+    path: 'tabs/places/:placeId',
     loadComponent: () => import('./places/place-detail/place-detail.page').then( m => m.PlaceDetailPage)
   },
 ];
