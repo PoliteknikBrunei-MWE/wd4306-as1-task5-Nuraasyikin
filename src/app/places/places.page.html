@@ -25,17 +25,28 @@
       </ion-card-content>
     </ion-card>
 
-    <!-- <ion-list>
-      <ion-item *ngFor="let place of places">
-        <ion-label>{{ place }}</ion-label>
-      </ion-item>
-    </ion-list> -->
-    <div class="button-container">
+    <ion-list>
+      <ion-list>
+        <ion-item
+          *ngFor="let place of places"
+          [routerLink]="['/places', place.id]"
+        >
+          <ion-avatar slot="start">
+            <ion-img [src]="place.imageUrl" />
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ place.title }}</h2>
+            <p>{{ place.book }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-list>
+    <!-- <div class="button-container">
       <ion-button class="custom-button">Brunei Muara</ion-button>
       <ion-button class="custom-button">Tutong</ion-button>
       <ion-button class="custom-button">Kuala Belait</ion-button>
       <ion-button class="custom-button">Temburong</ion-button>
-    </div>
+    </div> -->
     
   </ion-content>
 </div>
