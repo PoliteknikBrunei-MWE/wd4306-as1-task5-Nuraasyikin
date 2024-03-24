@@ -25,8 +25,20 @@
       </ion-toolbar>
     </ion-header>
 
-    <ion-button expand="full">Offer 1</ion-button>
+    <!-- <ion-button expand="full">Offer 1</ion-button>
     <ion-button expand="full">Offer 2</ion-button>
-    <ion-button expand="full">Offer 3</ion-button>
+    <ion-button expand="full">Offer 3</ion-button> -->
+
+    <ion-list>
+      <ion-item *ngFor="let offer of offers" [routerLink]="['/offers', offer.id]">
+        <ion-avatar slot="start">
+          <ion-img [src]="offer.imageUrl" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{ offer.title }}</h2>
+          <p>{{ offer.book }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   </ion-content>
 </div>
